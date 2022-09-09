@@ -3,7 +3,8 @@
   margin: 0 50px;
 }
 .bgimg {
-  background-image: url(./images/bgimg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url(./images/bgimg.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -42,22 +43,32 @@
   align-items: center;
   margin: 50px;
 }
+@media (max-width: 768px) {
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .mainContent p {
+    font-size: 15px;
+  }
+}
 .mainContent h1 {
   text-align: center;
 }
 
-.mainContent p {
-  
-}
 .sliderResp {
   display: flex;
 }
 .slider {
   max-width: 300px;
   margin: 50px 15px;
-  border: 1px solid gray;
+  border: 1px solid white;
   border-radius: 20px;
-  box-shadow: 4px 4px 20px gray;
+  box-shadow: 0px 0px 10px 8px rgba(150, 145, 145, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 8px rgba(150, 145, 145, 0.2);
+  -moz-box-shadow: 0px 0px 10px 8px rgba(150, 145, 145, 0.2);
   padding: 50px 20px;
 }
 .slider h1 {
@@ -68,15 +79,26 @@
 }
 .search {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-input {
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-300%, -35%);
+  text-align: center;
+}
+.searchInput {
   border: none;
   outline: none;
   text-align: center;
+  width: 70px;
 }
+
 .countries {
   margin-top: 40px;
   margin-bottom: 50px;
@@ -84,18 +106,30 @@ input {
 .contryCol {
   position: relative;
 }
+.contryCol::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .countries img {
   min-height: 300px;
   width: 100%;
-  margin: 30px 10px;
 }
 .countries span {
-  font-size: 20px;
+  color: white;
+  font-size: 24px;
   font-weight: bold;
   position: absolute;
-  top: 20%;
-  left: 40%;
-  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 .blogLayout {
   margin-top: 70px;
@@ -107,6 +141,7 @@ input {
   background-color: orange;
   padding: 10px 25px;
   text-align: center;
+  margin-top: 20px;
 }
 .banner {
   margin-top: 50px;
@@ -127,6 +162,18 @@ input {
   border-radius: 25px;
   border-color: white;
   padding: 5px 25px;
+}
+@media (max-width: 767px) {
+  .banner {
+    margin-top: 50px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px 20px 20px;
+  }
 }
 .site-footer {
   padding: 45px 0 20px;
