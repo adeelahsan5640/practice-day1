@@ -197,6 +197,7 @@ input {
 @media (max-width: 767px) {
   .site-footer {
     padding-bottom: 0;
+    text-align: center;
   }
   .site-footer .copyright-text,
   .site-footer .social-icons {
@@ -204,6 +205,7 @@ input {
   }
 }
 .social-icons {
+  margin-top: 20px;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
