@@ -1,0 +1,20 @@
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+  .testi{
+    border:3px solid transparent;
+    box-shadow: 2px 0px 20px gray;
+  }
+  .swiper-pagination-bullet{
+    background-color: orange;
+  }
+  @media  (max-width: 768px){
+    .swiper {
+      width: 350px;
+      height: 250px;
+    }
+    .swiper  p, h5{
+      font-size: 12px;
+    }
+  }
