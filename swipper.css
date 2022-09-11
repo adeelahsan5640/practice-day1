@@ -1,6 +1,6 @@
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 700px;
+  height: 350px;
 }
 .testi {
   border: 3px solid transparent;
@@ -12,12 +12,16 @@
   border-radius: 5px;
 }
 .swiper-pagination-bullet {
-  background-color: orange;
+ width: 15px;
+ height: 15px;
+ background-color:orange;
+
+
 }
 @media (max-width: 768px) {
   .swiper {
     width: 350px;
-    height: 250px;
+    height: 300px;
   }
   .swiper p,
   h5 {

@@ -3,7 +3,7 @@
   margin: 0 50px;
 }
 .bgimg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(./images/bgimg.jpg);
   background-size: cover;
   height: 100vh;
@@ -63,20 +63,27 @@
 }
 .slider {
   max-width: 300px;
-  margin: 50px 15px;
+  margin: 50px 0px;
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 8px rgba(150, 145, 145, 0.2);
   -webkit-box-shadow: 0px 0px 10px 8px rgba(150, 145, 145, 0.2);
   -moz-box-shadow: 0px 0px 10px 8px rgba(150, 145, 145, 0.2);
-  padding: 50px 20px;
+  padding: 20px;
 }
 .slider h1 {
   font-size: 15px;
+  margin-top: 10px;
 }
 .slider p {
   font-size: 12px;
 }
+@media (max-width: 767px) {
+  .slider{
+max-width: 350px;
+max-height:200px;
+padding: 10px 40px;
+}}
 .search {
   display: flex;
   align-items: center;
@@ -113,7 +120,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .countries img {
   min-height: 300px;
@@ -130,6 +137,19 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.card-text{
+  font-size: 14px;
+}
+
+@media (width: 1100px) {
+.card-text{
+font-size:10px;
+}
+.card-title{
+  font-size:12px;
+}
 }
 .blogLayout {
   margin-top: 70px;
